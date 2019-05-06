@@ -4,8 +4,8 @@ dubbo:
   registry: #地址
     address: 192.168.43.201:2181
     protocol: zookeeper
-  consumer: #消费方
-    timeout: 3000
-    check: false
+  consumer: #
+    timeout: 3000 #所有超时设置,优先级最低
+    check: false  #消费者启动时统一检查(false为不检查,当调用服务时检查)
 server:
   port: 8010

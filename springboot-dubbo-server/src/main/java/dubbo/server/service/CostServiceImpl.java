@@ -7,7 +7,7 @@ import dubbo.api.CostService;
  * dubbo服务接口 CostService
  * CostServiceImpl 服务的具体实现
  */
-@Service
+@Service //暴露dubbo服务
 public class CostServiceImpl implements CostService {
 
     private final Integer totalCost = 1000;

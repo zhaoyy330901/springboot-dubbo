@@ -5,12 +5,12 @@ dubbo:
     address: 192.168.43.201:2181
     protocol: zookeeper
     check: false
-  protocol: #dubbo协议
+  protocol: #dubbo协议、通信端口
     name: dubbo
     port: 20880
-  monitor: #
+  monitor: #容器监控中心
     protocol: register
-  consumer: #消费方
+  consumer:
     check: false
     timeout: 30000
 server:
