@@ -1,0 +1,17 @@
+dubbo:
+  application:
+    name: springboot-dubbo-server
+  registry: #注册地址
+    address: 192.168.43.201:2181
+    protocol: zookeeper
+    check: false
+  protocol: #dubbo协议
+    name: dubbo
+    port: 20880
+  monitor: #
+    protocol: register
+  consumer: #消费方
+    check: false
+    timeout: 30000
+server:
+  port: 8011

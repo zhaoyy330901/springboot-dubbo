@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    name: springboot-dubbo-client
+  registry:
+    address: 192.168.43.201:2181
+    protocol: zookeeper
+  consumer:
+    timeout: 3000
+    check: false
+server:
+  port: 8010
